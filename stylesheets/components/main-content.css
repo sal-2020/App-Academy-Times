@@ -1,1 +1,191 @@
 /* Your code here */
+
+.main-page {
+    display: inline-grid;
+    grid-template-areas:
+    "header header"
+    "article video"
+    "saone satwo";
+    grid-template-rows: 1.5fr 8fr 3fr;
+    grid-template-columns: 4.5fr 5.5fr;
+    width: 70%;
+}
+
+.main-article-title {
+    grid-area: header;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-right: 2px solid rgba(211, 211, 211, 0.5);
+}
+
+.main-article-text {
+    grid-area: article;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid black;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+.main-article-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-right: 10px;
+    line-height: 21px;
+    font-style: italic;
+}
+
+.main-article-subtitle {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 30px;
+}
+
+.main-article-author, {
+    color: gray;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.main-article-video {
+    grid-area: video;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid black;
+    border-right: 2px solid rgba(211, 211, 211, 0.5);
+}
+
+.num_comments {
+    color: rgb(77, 157, 208);
+    margin-top: 30px;
+}
+
+.small-article-1 {
+    grid-area: saone;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-right: 2px solid rgba(211, 211, 211, 0.5);
+}
+
+.small-article-2 {
+    grid-area: satwo;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-right: 2px solid rgba(211, 211, 211, 0.5);
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+.small-article-author {
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.small-article-content {
+    line-height: 18px;
+}
+
+.sidebar {
+    display: inline-grid;
+    grid-template-rows: 1fr 1.2fr 1.3fr;
+    flex-direction: column;
+    width: 29%;
+    border-bottom: 2px solid black;
+    padding-top: 0px;
+}
+
+.opinions {
+    grid-area: 1 / 1 / span 1 / span 1;
+    margin-left: 5px;
+    border-bottom: 2px solid rgba(211, 211, 211, 0.5);
+    padding-bottom: 10px;
+}
+
+.operations {
+    grid-area: 2 / 1 / span 1 / span 1;
+    margin-left: 5px;
+    border-bottom: 2px solid rgba(211, 211, 211, 0.5);
+}
+
+.operations-img {
+    width: 400px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.opinions-name {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    padding-bottom: 8px;
+}
+
+.opinions-title,
+.operations-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+
+.opinions-text,
+.operations-text {
+    line-height:18px;
+    padding-top: 10px;
+}
+
+.opinions-author,
+.operations-author {
+    color: gray;
+    padding: 10px 0;
+}
+
+.operations-name {
+    padding: 10px 0;
+}
+
+.operations > .num_comments {
+    padding-bottom: 20px;
+}
+
+.quickhits_container {
+    grid-area: 3 / 1 / span 1 / span 1;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1.2fr;
+    grid-auto-flow: column;
+    padding: 10px 0;
+    margin-left: 5px;
+}
+
+.quickhits {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.quickhits-author {
+    color: gray;
+    text-transform: uppercase;
+}
+
+.quickhits-text {
+    font-weight: bold;
+}

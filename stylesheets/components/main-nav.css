@@ -1,1 +1,10 @@
 /* Your code here */
+.navigation > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation > ul > li {
+    margin: 6px 12px;
+}

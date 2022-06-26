@@ -1,1 +1,67 @@
 /* Your code here */
+.interest_links_container {
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1.5fr 0.75fr 0.75fr;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+}
+
+.interest_links_image {
+    width: 70px;
+    height: auto;
+}
+
+.dog-text,
+.cat-text,
+.plug-text {
+    border-right: 1px solid lightgrey;
+}
+
+.dog-image,
+.cat-image,
+.plug-image,
+.sun-image {
+    display: flex;
+    justify-content: center;
+}
+
+.dog-text-title,
+.cat-text-title,
+.plug-text-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.stocks-text {
+    border-right: 1px solid lightgrey;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.percent-change {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(26, 169, 26);
+}
+
+.stock-name {
+    display: flex;
+    justify-content: center;
+}
+
+.sun-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
