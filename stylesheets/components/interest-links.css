@@ -65,3 +65,9 @@
     font-weight: bold;
     font-size: 20px;
 }
+
+@media (max-width: 999px) {
+    .interest_links_container {
+        display: none;
+    }
+}

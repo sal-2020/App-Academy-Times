@@ -6,11 +6,10 @@
   font-size: 12px;
   padding: 0.5em;
   position: absolute;
-  right: 5px;
-  top: 2.5em;
+  right: 4rem;
+  top: 4em;
   width: 200px;
 }
-
 
 .pref__section {
   border-top: 1px solid #dedede;
@@ -34,4 +33,12 @@
 
 .pref__section-link:hover {
   background-color: #dedede;
+}
+
+.pref--hidden {
+  display: none;
+}
+
+header {
+  position: relative;
 }

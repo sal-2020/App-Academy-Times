@@ -189,3 +189,13 @@ h3 {
 .quickhits-text {
     font-weight: bold;
 }
+
+@media (max-width: 1199px) {
+    .main-page {
+        width: 99%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}

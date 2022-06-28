@@ -8,3 +8,9 @@
 .navigation > ul > li {
     margin: 6px 12px;
 }
+
+@media (max-width: 1199px) {
+    .navigation {
+        display: none;
+    }
+}

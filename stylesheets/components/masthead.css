@@ -4,11 +4,6 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.masthead > div {
-    /* border: 2px solid black;
-    border-collapse: collapse; */
-}
-
 .masthead__menu-and-search {
     grid-row: 1 / span 1;
     display: flex;
